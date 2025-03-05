@@ -40,5 +40,5 @@ def check_speed(url):
 
 for url in urls:
     #print(url, check_dns(url), check_speed(url))
-    if check_dns(url) != 200 or check_speed(url) >= 1:
+    if check_dns(url) != 200 or check_speed(url) >= 5:
         send_message(f'Сайт {url} недоступен!')
